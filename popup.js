@@ -42,6 +42,8 @@ fontButton.addEventListener("click", async () => {
         fontPara.innerHTML = `<h3 class="htmlElement">${key}</h3> <span class="retrievedFont">${font}</span>`;
         container.appendChild(fontPara);
       });
+    } else {
+      console.error("Amazingly, no associated fonts were found...");
     }
   });
 
