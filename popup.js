@@ -39,7 +39,7 @@ fontButton.addEventListener("click", async () => {
       request.fonts.forEach((fontElement) => {
         let key = Object.keys(fontElement)[0];
         let font = fontElement[key];
-        let fontPara = document.createElement("p");
+        let fontPara = document.createElement("div");
         fontPara.style.color = "white";
         fontPara.classList.add("fontPara");
         fontPara.innerHTML = `<h3 class="htmlElement">${key}</h3> ${font}`;
