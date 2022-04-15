@@ -39,7 +39,7 @@ fontButton.addEventListener("click", async () => {
         let fontPara = document.createElement("div");
         fontPara.style.color = "white";
         fontPara.classList.add("fontPara");
-        fontPara.innerHTML = `<h3 class="htmlElement">${key}</h3> ${font}`;
+        fontPara.innerHTML = `<h3 class="htmlElement">${key}</h3> <span class="retrievedFont">${font}</span>`;
         container.appendChild(fontPara);
       });
     }

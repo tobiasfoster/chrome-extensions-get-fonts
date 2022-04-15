@@ -46,3 +46,7 @@ button.current {
   font-weight: bold;
   text-decoration: underline;
 }
+
+.retrievedFont {
+  color: rgb(27, 138, 222);
+}
