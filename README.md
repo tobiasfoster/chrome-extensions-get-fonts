@@ -16,7 +16,7 @@ An extension that retrieves the font families for the following HTML elements:
    12. "a",
    13. "span",
    14. "div",
-   15. "input",
+   15. "input"
 
 It only captures the first instance of the aforementioned elements, so if, for any reason, there are differences throughout the web page, they won't be captured. I'm relying on the fact that this would be **bad practice**.
 
