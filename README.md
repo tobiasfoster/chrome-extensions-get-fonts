@@ -18,3 +18,4 @@ An extension that retrieves the fonts for the following HTML elements:
    14. "div",
    15. "input",
 
+It only captures the first instance of the aforementioned elements, so if, for any reason, there are differentiates across the web page, they won't be captured. I'm relying on the fact that this would be **bad practice**
