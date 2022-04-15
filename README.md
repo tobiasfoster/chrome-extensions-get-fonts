@@ -21,3 +21,5 @@ An extension that retrieves the font family for the following HTML elements:
 It only captures the first instance of the aforementioned elements, so if, for any reason, there are differences throughout the web page, they won't be captured. I'm relying on the fact that this would be **bad practice**.
 
 I'm awaiting approval from Google for it to be added to the Google Chrome Web Store; in the meantime, you can clone this repo and install locally. Follow the instructions [here](https://developer.chrome.com/docs/extensions/mv3/getstarted/#unpacked).
+
+Anybody cloning might want to use the starter images, or add their own. If so, please change the manifest.json file.
