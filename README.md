@@ -1,6 +1,6 @@
 # chrome-extensions-get-fonts
 
-An extension that retrieves the font families for the following HTML elements:
+An extension that retrieves the font family for the following HTML elements:
 
    1. "html",
    2. "body",
