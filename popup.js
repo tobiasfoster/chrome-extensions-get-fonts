@@ -1,5 +1,4 @@
 console.log("loaded script");
-console.log("v1");
 
 let fontButton = document.getElementById("fontButton");
 let container = document.getElementById("fontContainer");
@@ -36,11 +35,11 @@ fontButton.addEventListener("click", async () => {
       request.fonts.forEach((fontElement) => {
         let key = Object.keys(fontElement)[0];
         let font = fontElement[key];
-        let fontPara = document.createElement("div");
-        fontPara.style.color = "white";
-        fontPara.classList.add("fontPara");
-        fontPara.innerHTML = `<h3 class="htmlElement">${key}</h3> <span class="retrievedFont">${font}</span>`;
-        container.appendChild(fontPara);
+        let fontItem = document.createElement("div");
+        fontItem.style.color = "white";
+        fontItem.classList.add("fontItem");
+        fontItem.innerHTML = `<h3 class="htmlElement">&lt;${key}&gt;</h3> <p class="retrievedFont">${font}</p>`;
+        container.appendChild(fontItem);
       });
     } else {
       console.error("Amazingly, no associated fonts were found...");
@@ -67,9 +66,9 @@ function getFonts() {
     "label",
     "button",
     "a",
+    "input",
     "span",
     "div",
-    "input",
   ];
 
   let fonts = [];
