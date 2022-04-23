@@ -18,7 +18,7 @@ An extension that retrieves the font family for the following HTML elements:
    14. "div",
    15. "input"
 
-It only captures the first instance of the aforementioned elements, so if, for any reason, there are differences throughout the web page, they won't be captured. I'm relying on the fact that this would be **bad practice**.
+It only captures the first instance of the aforementioned elements, so if, for any reason, there are differences throughout the web page, they won't be captured. I'm relying on the fact that this would be ***bad practice***.
 
 I'm awaiting approval from Google for it to be added to the Google Chrome Web Store; in the meantime, you can clone this repo and install locally. Follow the instructions [here](https://developer.chrome.com/docs/extensions/mv3/getstarted/#unpacked).
 
