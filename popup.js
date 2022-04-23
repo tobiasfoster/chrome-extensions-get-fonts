@@ -2,6 +2,7 @@ console.log("loaded script");
 
 let fontButton = document.getElementById("fontButton");
 let container = document.getElementById("fontContainer");
+let errorContainer = document.getElementById("errorContainer");
 
 chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
   if (container.childNodes) {
@@ -43,6 +44,10 @@ fontButton.addEventListener("click", async () => {
       });
     } else {
       console.error("Amazingly, no associated fonts were found...");
+      let errorParagraph = document.createElement("p");
+      errorParagraph.textContent = "No fonts were found";
+      errorParagraph.style.color = "red";
+      errorContainer.appendChild(errorParagraph);
     }
   });
 
